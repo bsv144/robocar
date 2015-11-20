@@ -18,12 +18,26 @@ MOTOR MOTOR2 = {7,8,9};
 
 void setup() {
   // put your setup code here, to run once:
-
+  Serial.begin(9600);
+  pinMode(MOTOR1.in1, OUTPUT);
+  pinMode(MOTOR1.in2, OUTPUT);
+  pinMode(MOTOR2.in1, OUTPUT);
+  pinMode(MOTOR2.in2, OUTPUT);
+   //Test
+  forward();
+  delay(5000);
+  back(); 
+  delay(5000);
+  left();
+  delay(5000);
+  right();
+  delay(5000);
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
-
+  
+  
 }
 
 
